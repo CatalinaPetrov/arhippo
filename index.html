@@ -1,0 +1,502 @@
+<!Doctype html>
+<html lang="ro">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Petrov Cătălina">
+  <meta name="keywords"
+    content="arhitectură, design interior, creativitate, calitate, clădiri, consultanță, management de proiectare, restaurare">
+  <meta name="description"
+    content="Arhippo este o companie de arhitectură ce are scopul de a transforma visurile clienților în realitate. Printre serviciile prestate se numără serviciile de consultanță, proiecatre arhitecturală, design, management, restaurare etc. ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arhippo</title>
+  <link rel="icon" href="Imagini/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <style>
+    /**{
+      outline: 1px solid red;
+    }*/
+
+    body {
+      background: black;
+      color: white;
+      margin: 0px;
+    }
+
+    /*nav {
+            background-color: #EBE3D5;
+            color:black;
+            font-size: large;
+            border-radius:2px;
+            width:100%;
+            object-fit:contain;
+          }*/
+    .logo {
+      justify-content: center;
+      display: flex;
+      height: 75px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .logo-href {
+      height: 75px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav li {
+      display: flex;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*incercare de redimensionare a caruselului*/
+    /*.carousel-inner {
+      height: 450px;
+    }*/
+
+    h1 {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .col {
+      width: 33.33%;
+    }
+
+    /*Partea de Servicii*/
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 30%;
+      margin: 13px;
+    }
+
+    .card-text {
+      color: black;
+    }
+
+    .container-fluid-1 {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    /*Partea de Proiecte*/
+
+    .card-title {
+      color: black;
+      text-size-adjust: small;
+    }
+
+    /*Partea de Contact*/
+    /*.harta{
+          width:50%;
+          }*/
+
+    iframe {
+      width: 100%;
+      padding-bottom: 7px;
+      height: 550px;
+      border-radius: 5px;
+    }
+
+    .contact {
+      background-color: white;
+      color: black;
+      /*width:40%;*/
+      height: 435px;
+      padding: 30px;
+      /*margin-left:10px;
+      margin-right:10px;*/
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .contact-2 {
+      text-align: center;
+    }
+
+    .contact-3 {
+      padding: 15px;
+    }
+
+    .contact-4 {
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      height: 35px;
+      margin: 15px;
+      padding: 5px;
+    }
+
+    .contact-5 {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      border: none;
+      height: 35px;
+      width: 75px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: box-shadow 0.15s;
+    }
+
+    .contact-6:hover {
+      box-shadow: 2px 2px 4px black;
+    }
+
+    footer {
+      background-color: #EBE3D5;
+      color: black;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo-contact {
+      height: 30px;
+      margin: 10px;
+    }
+
+    .p-footer {
+      text-align: center;
+    }
+
+    ol {
+      list-style-type: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <div class="logo">
+          <a href="index.html" class="logo"><img src="Imagini/favicon.png"
+              alt="portretul unui hipopotam ce zâmbește"></a>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <h1>arhippo</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Servicii">Servicii</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Proiecte">Proiecte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+    <!--Insert carousel-->
+    <div id="merry-Xmas" class="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Imagini/crls.jpg" class="d-block w-100"
+            alt="O casă albă cu acoperiș și o dungă sură pe mijloc. Casa are 2 etaje și o mică terasă cu un șezlong într-o parte și o canapea cu o măsuță de cafea ce sunt umbrite de o umbrelă pe cealaltă parte. Este un om ce merge în casă și o femeie ce stă pe canapea">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagini/crls-2.jpg" class="d-block w-100"
+            alt="O bucătărie în stil minimalist elegant cu o masă albă ce are are iluzie că e făcută din marmură deasupra și 6 scaune în jurul ei. De asemenea, se vede și o scară ce duce la etaj în spate">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagini/crsl-3.jpg" class="d-block w-100"
+            alt="O schiță de proiecție a unei case ce are deasupra amplasat un pix negru">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagini/crsl-4.jpg" class="d-block w-100"
+            alt="Ipostaza din spate a unui inginer fericit ce sare cu cel mai probabil planul casei în mână î fața unei case ce pare a fi în construcție">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagini/crsl-5.jpg" class="d-block w-100"
+            alt="Un salon family-friendly. Salonul conține o masă cu 8 scaune în jurul ei, rafturi de cărți în fața cărora sunt două bean bag-uri portocalii pe care stau o mamă și fiica ei. Lângă se află 2 mini canapele albe cu o masă de cafea în mijloc și o statuie așezată pe ea. Pe pereți sunt 3 tablouri. Sunt două seturi de uși ce duc la balcon, una dintre ele este deschisă și arată pe tatăl și fiu cum stau la balcon.">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#merry-Xmas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#merry-Xmas" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <div id="Servicii" class="container-fluid-1">
+    <h2>Servicii</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="heading-1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+            Consultanță
+          </button>
+        </h3>
+        <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="heading-1"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <span class="badge rounded-pill text-bg-danger">-30%</span>
+            <p>Beneficiați de experiența noastră extinsă în domeniul consultanței, unde vă ghidăm prin complexitatea
+              reglementărilor urbanistice și vă asistăm în obținerea permiselor necesare pentru proiectele
+              dumneavoastră.Fie că este vorba despre proiecte rezidențiale sau comerciale, colaborăm cu dvs. pentru a
+              identifica cele mai bune strategii și a aduce inovație în planificarea urbanistică.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="heading-2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+            Proiectare Arhitecturală
+          </button>
+        </h3>
+        <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>De la schițe inițiale la planuri arhitecturale detaliate, oferim soluții inovatoare și personalizate</a>
+              care îmbină frumusețea cu eficiența spațiului. Colaborăm îndeaproape cu dvs. pentru a înțelege viziunea și
+              a crea proiecte care să îndeplinească atât estetica, cât și funcționalitatea.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="heading-3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+            Design
+          </button>
+        </h3>
+        <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p> Vă oferim soluții inovatoare pentru design conceptual, interior și planificare urbanistică. Echipa
+              noastră pasionată se dedică creării unor experiențe spațiale remarcabile, indiferent dacă este vorba de
+              transformarea vizuală a locuinței dumneavoastră, de definirea unui interior care să reflecte
+              personalitatea unui brand sau de elaborarea unui plan urbanistic</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="heading-4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+            Management de Proiectare
+          </button>
+        </h3>
+        <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Cu o vastă experiență în coordonarea proiectelor complexe, oferim soluții personalizate pentru a
+              îndeplini obiectivele dumneavoastră. Prin gestionarea eficientă a resurselor și comunicarea transparentă,
+              asigurăm livrarea proiectelor la timp și în cadrul bugetului.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="heading-5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+            Restaurare și Conservare
+          </button>
+        </h3>
+        <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Punem în aplicare tehnici avansate de restaurare pentru a reda splendoarea originală a clădirilor
+              istorice, respectând și valorificând materialele tradiționale. Prin intermediul serviciilor noastre de
+              conservare, protejăm și menținem integritatea structurală și estetică a patrimoniului cultural.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Proiecte">
+    <h2>Proiecte</h2>
+    <div class="container">
+      <div class="row">
+        <div class="card col-lg-4 col-md-4 col-sm-12">
+          <img src="Imagini/prct-1.jpg" class="card-img-top"
+            alt="O mansardă ce e în proiectare. Un dulap în spate plin cu cărți, alte două dulapturi mai mici în lături. O fereastră mare împărțită în 9 și un scaun mic albastru lângă ea.">
+          <div class="card-body">
+            <h3 class="card-title">Spațiu de studiu</h3>
+            <p class="card-text">Echipa noastră a colaborat împreunp cu primăria orașului în formarea unui noi spațiu de
+              studiu. Proiectul are scopul de a oferi atât studenților, cât și elevilor un loc în care să poată învăța
+              într-un mod plăcut și eficient.</p>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-md-4 col-sm-12">
+          <img src="Imagini/prct-2.jpg" class="card-img-top"
+            alt="Un salon cu ferestre mari ce dau spre curte. O canapea albă cu 6 perne maro pe ea. O măsuță mică de cafea albă ce are o vază poziționată pe ea. O masă cu 3 scaune poziționate la ea. În spate e o mini bucătărie cu o chiuvetă și un spațiu de gătit și dulapuri">
+          <div class="card-body">
+            <h3 class="card-title">Vila President</h3>
+            <p class="card-text">Un proiect rezidențial distinct, gândit pentru a îmbina rafinamentul cu
+              funcționalitatea într-un mod excepțional. Inspirată de ideea de prestigiu și lux, vila va integra elemente
+              de design care subliniază eleganța și confortul. </p>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-md-4 col-sm-12">
+          <img src="Imagini/prct-3.jpg" class="card-img-top"
+            alt="O vilă cu 3 etaje din exterior. E albă cu o curte mare, un balcon la etajul 2, o terasă în spate.">
+          <div class="card-body">
+            <h3 class="card-title">Motel „Aristocrat”</h3>
+            <p class="card-text">Motelul este inspirat de ideea de aristocrație, proiectul vizează nu doar eficiența
+              spațiului și facilitățile motelului, ci și încorporarea unor elemente arhitecturale care emană rafinament
+              și distincție. </p>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-md-4 col-sm-12">
+          <img src="Imagini/prct-4.jpg" class="card-img-top"
+            alt="O bucătărie cu o masă din lemn și 8 scaune amplasate la ea. O chiuvetă, spațiu de gătit în spatele mesei și o scară ce duce la etaj. Pe peretele de la scară se află un tablou.">
+          <div class="card-body">
+            <h3 class="card-title">Design spațiu family-friendly</h3>
+            <p class="card-text">Suntem familiari în ceea ce ține de crearea unui design cât mai family-friendly.
+              Adaptarea spațiului conform nevoilor vieții de familie, pentru a se putea bucura cu toții.</p>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-md-4 col-sm-12">
+          <img src="Imagini/prct-5.jpg" class="card-img-top"
+            alt="Un hol cu tablouri pe pereți și un set de scări. O măsuță mică pe care este amplasată o lampă și 2 decorațiuni">
+          <div class="card-body">
+            <h3 class="card-title">Galeria de artă </h3>
+            <p class="card-text">Galeria are scopul de a aduce vizitatorul mai aproape de artă, creând o legătură
+              apropiată. Astfel galeria are un design asemănător unui spațiu locativ de lux.</p>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-md-4 col-sm-12">
+          <img src="Imagini/prct-6.jpg" class="card-img-top"
+            alt="O baie mare cu două chiuvete, un duș în spate, alături de o fereastră mare ce dă spre mare. Pe perete ce stă în fața oglinzilor de deasupra chiuvetelor stă un tablou.">
+          <div class="card-body">
+            <h3 class="card-title">Casa de vacanță</h3>
+            <p class="card-text">Construirea unei case de vacanță ce are scopul de a oferi unui spațiu de relaxare și
+              odihnă pentru persoanele ce o vizitează. Casa e gândit încât indiferent dacă e un cuplu sau o familie,
+              chiriașii să se poată bucura de timpul petrecut timp împreună la fel de mult.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Contact" class="container">
+    <h2>Contact</h2>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="harta">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.6476308623905!2d23.604774176081364!3d46.771841645248436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c2321652047%3A0x26c7a15ac3b3be71!2sFacultatea%20de%20%C8%98tiin%C8%9Be%20Politice%2C%20Administrative%20%C8%99i%20ale%20Comunic%C4%83rii!5e0!3m2!1sro!2sro!4v1701166583453!5m2!1sro!2sro"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="contact">
+          <div class="contact-2">
+            <h2>Contactează-ne</h2>
+          </div>
+          <div class="contact-3">
+            <div class="contact-4">
+              <p>Nume</p>
+            </div>
+            <div class="contact-4">
+              <p>E-mail</p>
+            </div>
+            <div class="contact-4">
+              <p>Mesaj</p>
+            </div>
+          </div>
+          <div class="contact-5">
+            <button class="contact-6"><a href="https://www.youtube.com/watch?v=PF0MGZnGzbE" target="_blank"
+                class="black">Trimite</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h2>Suport</h2>
+          <ol>
+            <a href="https://policies.google.com/privacy?hl=en-US">
+              <li>Privacy Policy</li>
+            </a>
+            <li>Terms and Conditions</li>
+          </ol>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h2>Contact</h2>
+          <ol>
+            <li>+40-785-25*-***</li>
+            <li>arhippo@gmail.com</li>
+          </ol>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h2>Social Media</h2>
+          <a href="https://www.instagram.com/" target="_blank"><img class="logo-contact" src="Imagini/instagram.png"
+              alt="logo instagram "></a>
+          <a href="https://www.facebook.com/" target="_blank"><img class="logo-contact" src="Imagini/facebook.png"
+              alt="logo facebook"> </a>
+          <a href="https://www.tiktok.com/" target="_blank"><img class="logo-contact" src="Imagini/tiktok.png"
+              alt="logo tiktok"></a>
+        </div>
+      </div>
+      </div>
+      <div class="class-12">
+        <hr/>
+        <p class="p-footer">AllRightsReserved. &copy, 2023 </p>
+      </div>
+  </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
